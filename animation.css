@@ -1,0 +1,48 @@
+body {
+    overflow: hidden;
+}
+
+.animation {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    align-items: center;
+}
+
+#banner {
+    width: 133px;
+    height: 123px;
+    background: white;
+    clip-path: path('M133 122.413C125.74 124.484 114.973 120.812 107.48 115.57C100.79 110.886 95.4193 105.006 91.5416 97.7063C83.4366 82.4645 75.1326 67.3291 66.9034 52.156C66.7475 51.8692 66.4791 51.6422 66.0898 51.1812C58.5464 64.7815 51.0965 78.2075 43.6493 91.6336C35.5443 110.388 20.9843 120.205 0 122.148C8.22921 106.14 16.2744 90.2226 25.2609 74.7881C38.5247 50.1784 51.7879 25.5659 65.5659 0C88.3119 41.2933 110.643 81.8266 133 122.413Z');
+}
+
+.fill {
+    animation-name: fillAction;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .8, .4);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: rgba(15, 29, 92, 0.5);
+}
+
+@keyframes fillAction {
+    0% {
+        transform: translate(0, 150px);
+    }
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+#banner #waveShape {
+    width: 246px;
+    height: 123px;
+    fill: #0F1D5C;
+    transform: scale(1.5);
+}

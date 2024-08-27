@@ -1,0 +1,107 @@
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: aqua;
+    font-size: 20px;
+}
+
+.hover:hover {
+    color: black;
+}
+
+.visited:visited {
+    color: yellowgreen;
+}
+
+.active:active {
+    color: red;
+}
+
+input {
+    width: 300px;
+    font-size: 18px;    
+}
+
+input:focus {
+    width: 150px;
+    box-shadow: 10px 5px 5px red;
+}
+
+
+.ul_list li:first-child {
+    color: blue;
+}
+
+.ul_list li:last-child {
+    color: red;
+}
+
+.ul_list li:nth-child(2) {
+    color: yellow;
+}
+
+.ul_list li:nth-child(3) {
+    color: yellowgreen;
+}
+
+.ul_list li:nth-child(4) {
+    color: blueviolet;
+}
+
+.first-line {
+    width: 200px;
+}
+
+.first-line::first-line {
+    color: red;
+}
+
+.first-line::first-letter {
+    color: green;
+    font-size: 40px;
+}
+
+
+.first-ul li::before{
+    content: "<<";
+}
+
+.first-ul li::after{
+    content: ">>";
+
+}
+
+.second-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.second-ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.second-ul li:hover::before {
+    background-color: aquamarine;
+}
+
+
+
+@media (max-width: 1100px) {
+
+}
+
+
+@media (monochrome) {
+    
+}
